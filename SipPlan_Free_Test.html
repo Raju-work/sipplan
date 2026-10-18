@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2a7fe0">
+<title>SipPlan — Free Test</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-title" content="SipPlan">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+:root{--bg:#e4f3ff;--card:#fff;--ink:#12395c;--mute:#4d7699;--line:#c6e0f7;--leaf:#2a7fe0;--lake:#1e9bd7;--sky:#d3ecff;--sky2:#8fcbff;--on:#fff;--chip:#dcecff;--hill1:#bfe3ff;--hill2:#9fd2fa;--sun:#ffe08a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+:root[data-skin="pink"]{--bg:#fff1f6;--ink:#5a2740;--mute:#9a6b82;--line:#f7d3e2;--leaf:#e0568f;--lake:#f08ab0;--sky:#ffe4ef;--sky2:#ffc9de;--chip:#ffe3ee;--hill1:#ffd1e1;--hill2:#ffb6cf;--sun:#fff1b8}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--bg)}
+body{color:var(--ink);font:16px/1.4 Nunito,"Trebuchet MS",system-ui,sans-serif;max-width:520px;margin:0 auto;display:flex;flex-direction:column;overflow:hidden}
+h1{font-size:22px;font-weight:800;margin:0}h2{font-size:18px;font-weight:800;margin:0 0 6px}
+.sub{color:var(--mute);font-size:14px;margin:0 0 8px}.note{font-size:13px;color:var(--mute);margin:8px 0 0}
+main{flex:1;min-height:0;overflow:hidden;touch-action:pan-y}
+.track{display:flex;width:300%;height:100%;will-change:transform;transition:transform .38s cubic-bezier(.22,.8,.3,1)}
+.page{width:33.3333%;height:100%;overflow-y:auto;overscroll-behavior:contain;padding:10px 14px}
+.page.chat{display:flex;flex-direction:column;gap:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;margin-bottom:10px}
+.scene{position:relative;border-radius:24px;overflow:hidden;margin-bottom:10px;border:1px solid var(--line);cursor:pointer;touch-action:manipulation}
+.scene svg{display:block;width:100%;height:auto}
+.bubble{position:absolute;left:10px;right:10px;top:8px;background:var(--card);border-radius:14px;padding:6px 10px;font-weight:700;font-size:14px;text-align:center;box-shadow:0 2px 0 var(--line)}
+.bob{animation:bob 3s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+.jump{animation:jump .6s ease-out}
+.drift{animation:drift 20s ease-in-out infinite alternate}
+.heart{animation:rise 5s ease-in infinite;opacity:0}
+.hop{animation:hop 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-4px)}}
+@keyframes jump{30%{transform:translateY(-16px) scale(1.06)}60%{transform:translateY(0) scale(.96,1.04)}}
+@keyframes drift{to{transform:translateX(36px)}}
+@keyframes rise{0%{transform:translateY(0);opacity:0}25%{opacity:.9}100%{transform:translateY(-70px);opacity:0}}
+@keyframes hop{50%{transform:translateY(-7px)}}
+@keyframes pop{to{transform:translate(var(--x),var(--y));opacity:0}}
+.bit{position:absolute;left:50%;top:60%;font-size:20px;pointer-events:none;animation:pop 1s ease-out forwards}
+@media (prefers-reduced-motion:reduce){.bob,.jump,.drift,.heart,.hop,.bit,.track{animation:none;transition:none}}
+.stat{display:flex;justify-content:space-between;font-weight:800;margin-bottom:6px}.stat span:last-child{color:var(--mute);font-weight:700}
+.pond{height:18px;border-radius:99px;background:var(--sky);overflow:hidden;border:1px solid var(--line)}
+.pond i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lake),var(--leaf));border-radius:99px;transition:width .6s}
+button{font:inherit;font-weight:800;cursor:pointer;border-radius:14px;border:2px solid var(--leaf);background:transparent;color:var(--leaf);padding:9px 12px;min-height:44px}
+button.solid{background:var(--leaf);color:var(--on)}button.blue{background:var(--lake);border-color:var(--lake);color:var(--on)}
+.row{display:flex;gap:8px;margin-top:10px}.row button{flex:1}
+.next{background:linear-gradient(135deg,var(--sky),var(--chip))}.next h2{margin:0}.next .sub{margin:2px 0 0}
+.strip{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
+.chip{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;min-height:50px;padding:6px 12px;background:var(--card);border-color:var(--line);color:var(--ink);line-height:1.2}
+.chip small{font-weight:700;color:var(--mute)}.chip.c{background:var(--chip);border-color:var(--lake)}
+.chip.done{opacity:.45;text-decoration:line-through}.chip.late{border-color:#e5484d}
+.tabs{display:flex;background:var(--card);border-top:1px solid var(--line)}
+.tabs button{flex:1;border:none;border-radius:0;background:transparent;color:var(--mute);display:flex;flex-direction:column;align-items:center;font-size:12px;padding:6px;line-height:1.2}
+.tabs button b{font-size:20px;font-weight:400}.tabs button.on{color:var(--leaf)}
+.log{flex:1;min-height:120px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;padding:4px 0}
+.msg{padding:8px 12px;border-radius:16px;max-width:88%;white-space:pre-wrap;font-size:15px}
+.msg.me{align-self:flex-end;background:var(--leaf);color:var(--on)}.msg.ai{align-self:flex-start;background:var(--card);border:1px solid var(--line)}
+.chatrow{display:flex;gap:8px}.chatrow input{flex:1}.chatrow button{flex:0 0 auto}
+.qs{display:flex;gap:6px;overflow-x:auto}.qs button{flex:0 0 auto;font-size:13px;min-height:36px;padding:4px 10px}
+label{display:block;font-size:13px;font-weight:700;color:var(--mute);margin-top:8px}
+input,select{font:inherit;width:100%;padding:9px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);min-height:44px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.prof{display:flex;align-items:center;gap:12px}
+.onb{position:fixed;inset:0;z-index:20;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:calc(20px + env(safe-area-inset-top,0px)) 20px calc(20px + env(safe-area-inset-bottom,0px))}
+.onb[hidden],.step[hidden]{display:none}
+.ob{width:100%;max-width:420px}.step{display:flex;flex-direction:column;gap:10px;max-height:100%}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.two button{padding:22px 8px;font-size:18px}
+.err{color:#d12d3a;font-size:14px;min-height:18px;margin:0}
+:focus-visible{outline:3px solid var(--lake);outline-offset:2px}
+
+/* SipPlan upgrades: weekly history, secure account connection, and weekend settings */
+.hbars{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px;align-items:end;height:112px;margin:14px 0 8px}
+.hday{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;min-width:0;height:100%;font-size:11px;color:var(--mute)}
+.htrack{width:100%;height:82px;border-radius:9px;background:var(--sky);display:flex;align-items:flex-end;overflow:hidden}
+.hfill{display:block;width:100%;background:linear-gradient(180deg,var(--lake),var(--leaf));border-radius:8px;min-height:2px}
+.hday.today b{color:var(--leaf)}.tiny{font-size:12px;color:var(--mute)}
+.status{border-radius:12px;background:var(--sky);padding:10px;font-size:13px;margin-top:8px;white-space:pre-wrap;overflow-wrap:anywhere}
+.btnwrap{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.btnwrap button{flex:1;min-width:130px}
+.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+.small-input{font-size:14px!important}.partner-log{display:flex;flex-direction:column;gap:6px;margin-top:8px}.partner-day{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line);padding:6px 0;font-size:13px}
+button:disabled{opacity:.5;cursor:not-allowed}.warning{font-size:12px;line-height:1.45;color:var(--mute)}
+.alarm-toast{display:none;position:fixed;z-index:9999;left:12px;right:12px;bottom:78px;max-width:496px;margin:auto;background:var(--card);border:2px solid var(--leaf);border-radius:18px;padding:14px;box-shadow:0 8px 26px #17304a33}.alarm-toast strong{display:block;font-size:17px;margin-bottom:4px}.alarm-toast p{margin:0 0 10px;color:var(--mute);font-size:14px}.alarm-toast button{min-height:38px;padding:6px 12px}
+@media(min-width:520px){body{border-left:1px solid var(--line);border-right:1px solid var(--line)}}
+
+</style>
+</head>
+<body>
+<div class="onb" id="onb" hidden><div class="ob">
+  <div class="step" id="s1"><h1>Hi! I’m your water buddy 💧</h1><p class="sub">Let’s make a plan just for you. Are you:</p><div class="two"><button class="solid" data-g="male">Male</button><button class="solid" data-g="female" style="background:#e0568f;border-color:#e0568f">Female</button></div></div>
+  <div class="step" id="s2" hidden><h1>How old are you?</h1><input id="oage" type="number" inputmode="numeric" min="6" max="99" placeholder="Age"><p class="err" id="e2"></p><button class="solid" data-next="2">Next</button></div>
+  <div class="step" id="s3" hidden><h1>What should I call you?</h1><input id="oname" maxlength="16" placeholder="Your name"><p class="err" id="e3"></p><button class="solid" data-next="3">Next</button></div>
+  <div class="step" id="s4" hidden><h1>Tell me about your day <small style="font-weight:400">(optional)</small></h1><p class="sub">Where do you go, when do you drink, what makes it hard? I’ll shape your plan.</p><div class="log" id="olog" style="max-height:36vh"></div><div class="chatrow"><input id="omsg" placeholder="Type here…" maxlength="400"><button class="solid" id="osend">Send</button></div><button class="solid" id="ofin">Skip for now</button></div>
+</div></div>
+
+<main id="pages"><div class="track" id="track">
+<section class="page" id="p0">
+  <h1 id="hi"></h1><p class="sub" id="hs"></p>
+  <div class="scene" id="scene" role="button" tabindex="0" aria-label="Tap your buddy"><div class="bubble" id="bubble"></div><div id="art"></div></div>
+  <div class="card"><div class="stat"><span id="prog"></span><span id="left"></span></div><div class="pond"><i id="fill"></i></div>
+    <div class="row"><button class="blue" data-add="sip">+ Sip</button><button class="solid" data-add="glass">+ Glass</button><button id="undo">Undo</button></div></div>
+  <div class="card next"><h2 id="nt"></h2><p class="sub" id="ns"></p><div class="row"><button class="solid" id="nextBtn">I drank this</button><button id="skipBtn">Not now</button></div></div>
+  <div class="strip" id="strip"></div>
+  <div class="card" id="historyCard"><h2>🌱 Your week</h2><p class="sub" style="margin-bottom:0">Daily totals and consistency, saved on this device.</p><div class="hbars" id="weekBars" aria-label="Water totals for the last seven days"></div><p id="streakInfo" class="note"></p><div class="partner-log" id="weekList"></div></div>
+</section>
+<section class="page chat" id="p1">
+  <h1>Chat with <span id="bn"></span></h1>
+  <div class="log" id="clog" aria-live="polite"></div>
+  <div class="qs"><button data-q="I skipped water at college again">Skipped at college</button><button data-q="I just drank 500 ml">I drank 500 ml</button><button data-q="I forget to drink when I’m busy">I forget</button></div>
+  <div class="chatrow"><input id="cmsg" placeholder="Tell me about your day…" maxlength="400"><button class="solid" id="csend">Send</button></div>
+  <p class="note" style="margin:0">Free mode: your buddy replies on this device. Cloud AI and couple sharing are optional and need a hosted backend.</p>
+</section>
+<section class="page" id="p2">
+  <div class="card prof"><svg id="av" viewBox="14 4 92 96" width="72" height="76"></svg><div><h2 id="an" style="margin:0"></h2><p class="sub" id="as" style="margin:0"></p></div></div>
+  <div class="card"><h2>Your details</h2><div class="g2">
+    <div><label for="name">Name</label><input id="name" maxlength="16"></div><div><label for="age">Age</label><input id="age" type="number" min="6" max="99"></div>
+    <div><label for="gender">Gender</label><select id="gender"><option value="male">Male</option><option value="female">Female</option></select></div><div><label for="buddy">Buddy’s name</label><input id="buddy" maxlength="14"></div>
+    <div style="grid-column:1/-1"><label for="character">Buddy character</label><select id="character"><option value="human">Coco — original buddy</option><option value="cat">Mochi — cat buddy</option><option value="bunny">Boba — bunny buddy</option><option value="frog">Pip — frog buddy</option><option value="bear">Sunny — bear buddy</option></select></div></div>
+    <div class="row"><button id="regoal">Recalculate goal for my age</button></div></div>
+  <div class="card"><h2>Theme</h2><div class="row" style="margin:0"><button class="solid" data-skin="blue">☁️ Blue sky</button><button class="solid" data-skin="pink" style="background:#e0568f;border-color:#e0568f">🌸 Pink</button></div></div>
+  <div class="card"><h2>My day and goals</h2><div class="g2">
+    <div><label for="wake">Wake up</label><input type="time" id="wake"></div><div><label for="sleep">Sleep</label><input type="time" id="sleep"></div>
+    <div><label for="cs">College starts</label><input type="time" id="cs"></div><div><label for="ce">College ends</label><input type="time" id="ce"></div>
+    <div><label for="goal">Daily goal (ml)</label><input type="number" id="goal" min="500" max="5000" step="100"></div><div><label for="csip">College sip (ml/hour)</label><input type="number" id="csip" min="0" max="300" step="10"></div>
+    <div><label for="sipsz">Sip button (ml)</label><input type="number" id="sipsz" min="20" max="300" step="10"></div><div><label for="glasssz">Glass button (ml)</label><input type="number" id="glasssz" min="100" max="1000" step="50"></div></div>
+    <div class="row"><button id="notif" class="solid">Allow browser notifications</button><button id="testNotif">Test notification</button></div><div class="row"><button id="disableNotif">Turn off notifications</button></div><label><input id="soundOn" type="checkbox" style="width:auto;min-height:0;margin-right:6px"> Optional gentle sound after logging a drink</label><p class="note" id="notifNote">Browser notifications are optional. Free interval alarms below do not need an account or paid service.</p></div>
+  <div class="card"><h2>⏰ Free drink alarms</h2><p class="sub">Choose how often to be reminded. Keep this SipPlan page open for these free alarms to run. They use an in-page alert, gentle sound and vibration where supported—no account or server needed.</p><label for="reminderInterval">Remind me every</label><select id="reminderInterval"><option value="15">15 minutes</option><option value="20">20 minutes</option><option value="30">30 minutes</option><option value="45" selected>45 minutes</option><option value="60">1 hour</option><option value="90">1.5 hours</option><option value="120">2 hours</option></select><label><input id="alarmSoundOn" type="checkbox" checked style="width:auto;min-height:0;margin-right:6px"> Play a gentle alarm sound</label><div class="row"><button id="startFreeAlarm" class="solid">Start free alarms</button><button id="testFreeAlarm">Test alarm</button></div><div class="row"><button id="stopFreeAlarm">Stop alarms</button></div><p class="status" id="alarmStatus" aria-live="polite">Free alarms are off. Tap Start free alarms to begin.</p></div>
+  <div class="card"><h2>Weekend plan</h2><p class="sub">Use a separate wake time, sleep time and goal on Saturdays and Sundays. College reminders are paused on weekends.</p><div class="settings-grid"><div><label for="wwake">Weekend wake up</label><input id="wwake" type="time"></div><div><label for="wsleep">Weekend sleep</label><input id="wsleep" type="time"></div><div><label for="wgoal">Weekend water goal (ml)</label><input id="wgoal" type="number" min="500" max="5000" step="100"></div></div><p class="note">Daily goals are personal targets, not medical advice. Adjust them to your needs.</p></div>
+  <div class="card"><h2>Cloud AI, accounts & couple sharing</h2><p class="sub">Not active in this free standalone test file. The local tracker, weekly history, basic buddy chat and on-page alarms work without these services. Real account sharing and generative AI need a secure hosted backend; closed-app push also needs a running server.</p>
+    <label for="cloudUrl">Supabase project URL</label><input id="cloudUrl" class="small-input" type="url" placeholder="https://your-project.supabase.co" autocomplete="url">
+    <label for="cloudAnon">Supabase public anon/publishable key</label><input id="cloudAnon" class="small-input" type="password" placeholder="Public client key (never service role key)" autocomplete="off">
+    <label for="apiUrl">SipPlan backend URL</label><input id="apiUrl" class="small-input" type="url" placeholder="https://your-sipplan-api.example.com" autocomplete="url">
+    <div class="btnwrap"><button id="saveCloud" class="solid">Save connection</button><button id="cloudStatus">Check connection</button></div>
+    <label for="loginEmail">Email</label><input id="loginEmail" type="email" class="small-input" placeholder="you@example.com" autocomplete="email">
+    <label for="loginPassword">Password (use a unique password)</label><input id="loginPassword" type="password" class="small-input" minlength="10" placeholder="At least 10 characters" autocomplete="current-password">
+    <div class="btnwrap"><button id="signupCloud" class="solid">Create account</button><button id="loginCloud">Sign in</button><button id="logoutCloud">Sign out</button></div>
+    <div id="cloudNote" class="status" aria-live="polite">Free test mode is ready. Your tracker, weekly history, buddies, on-device buddy chat and free alarms work without an account. Cloud AI and couple sharing need a hosted backend.</div>
+    <h2 style="margin-top:16px">Share progress with your partner</h2><p class="warning">Both people must create their own account and agree to connect. The linked person can see your shared daily water totals, goals, and display name. Either person can disconnect any time.</p>
+    <div class="btnwrap"><button id="invitePartner">Create invite code</button><button id="refreshPartner">Refresh partner progress</button></div><label for="inviteCode">Partner’s invite code</label><input id="inviteCode" class="small-input" maxlength="12" placeholder="Enter their code" autocomplete="off"><div class="btnwrap"><button id="joinPartner" class="solid">Join with code</button><button id="leavePartner">Disconnect</button></div>
+    <div id="partnerStatus" class="status">Not connected to a partner.</div><div class="partner-log" id="partnerProgress"></div>
+  </div>
+  <div class="card"><h2>Privacy & safety</h2><p class="warning">SipPlan stores this device’s data in browser storage. When you use cloud sync or AI, selected profile, hydration, and chat context is sent to your configured backend. Do not enter medical records or anything you would not want processed by the service providers. Pair sharing is for daily hydration progress—not diagnosis or medical monitoring.</p></div>
+  <div class="card"><button id="reset" style="width:100%">Reset local SipPlan data</button></div>
+</section>
+</div></main>
+<div id="alarmToast" class="alarm-toast" role="status" aria-live="polite"><strong>💧 SipPlan water break!</strong><p id="alarmToastText">Time for a comfortable sip. Listen to your body.</p><button id="dismissAlarm" class="solid">Okay, thanks!</button></div>
+<nav class="tabs" id="tabs"><button data-tab="0" class="on"><b>🏠</b>Home</button><button data-tab="1"><b>💬</b>Chat</button><button data-tab="2"><b>👤</b>Account</button></nav>
+
+<script>
+var KEY="sipplan:v2",DEF={onboarded:false,gender:"",age:0,name:"",buddy:"Coco",character:"human",skin:"blue",wake:"06:30",sleep:"23:00",cs:"09:00",ce:"15:30",goal:2000,csip:50,sipsz:150,glasssz:250,wwake:"08:00",wsleep:"23:30",wgoal:2000,extras:[],memory:"",soundOn:false,reminderEnabled:false,reminderInterval:45,alarmSoundOn:true,lastReminderAt:0};
+var S=load("cfg",DEF),today=localDay(new Date()),L=load("log:"+today,{done:[],extra:[]}),plan=[],temp="",say="",mood="happy",page=0,taps=0,CH=[],cloud={client:null,session:null,ready:false},reminderSent={};
+var CLOUD=load("cloud",{url:"",anon:"",api:""});
+try{CH=JSON.parse(localStorage.getItem(KEY+"chat")||"[]")}catch(e){}
+function localDay(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+function dateFromKey(k){return new Date(k+"T12:00:00")}
+function load(k,d){try{var v=localStorage.getItem(KEY+k);return v?Object.assign({},d,JSON.parse(v)):JSON.parse(JSON.stringify(d))}catch(e){return JSON.parse(JSON.stringify(d))}}
+function save(k,v){try{localStorage.setItem(KEY+k,JSON.stringify(v))}catch(e){}}
+function $(i){return document.getElementById(i)}
+function m(t){var p=t.split(":");return +p[0]*60+ +p[1]}
+function f(x){var h=Math.floor(x/60)%24,mi=x%60;return((h+11)%12+1)+":"+String(mi).padStart(2,"0")+(h>=12?" pm":" am")}
+function nowM(){var d=new Date();return d.getHours()*60+d.getMinutes()}
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+function baseGoal(){var a=+S.age,b=S.gender=="male";return a<9?1200:a<14?1700:a<19?(b?2300:1900):(b?2500:2000)}
+function build(forDate){
+  var day=forDate?dateFromKey(forDate):new Date(),isWeekend=day.getDay()==0||day.getDay()==6;
+  var w=m(isWeekend?S.wwake:S.wake),sl=m(isWeekend?S.wsleep:S.sleep)-60,a=m(S.cs),b=m(S.ce),out=[];
+  if(isWeekend){
+    if(!(w<sl))return out;
+    var wg=Math.min(5000,Math.max(500,+S.wgoal||+S.goal||2000)),count=Math.max(1,Math.floor((sl-w)/60)),amt=Math.round(wg/count/10)*10;
+    for(var wt=w+30;wt<sl;wt+=60)out.push({t:wt,a:amt,z:"weekend",label:"A relaxed weekend sip"});
+    if(!out.length)out.push({t:w+30,a:wg,z:"weekend",label:"A relaxed weekend sip"});
+  }else{
+    if(!(w<a&&a<b&&b<sl))return out;
+    var cn=Math.max(1,Math.floor((b-a)/60)),rest=Math.max(0,S.goal-S.csip*cn),bef=Math.round(rest*.3),aft=rest-bef;
+    function seg(s,e,step,tot){var n=Math.max(1,Math.floor((e-s)/step)),amt=Math.round(tot/n/10)*10;for(var i=0;i<n;i++)out.push({t:s+i*step,a:amt,z:"home"})}
+    seg(w,a-20,45,bef);
+    for(var t=a+60;t<=b;t+=60)out.push({t:t,a:+S.csip,z:"college"});
+    seg(b+15,sl,60,aft);
+  }
+  (S.extras||[]).slice(0,6).forEach(function(x){if(/^[0-2]\d:[0-5]\d$/.test(x.t))out.push({t:m(x.t),a:+x.a||100,z:x.z=="college"?"college":"home",label:x.label||""})});
+  out.sort(function(x,y){return x.t-y.t});
+  return out.map(function(x){x.id=x.z+x.t;return x});
+}
+function total(){var s=0;plan.forEach(function(p){if(L.done.indexOf(p.id)>-1)s+=p.a});L.extra.forEach(function(e){s+=e});return s}
+function persistLog(){L.totalMl=total();L.goalMl=(new Date().getDay()==0||new Date().getDay()==6)?(+S.wgoal||+S.goal):+S.goal;L.updatedAt=new Date().toISOString();save("log:"+today,L)}
+function goalForDay(d){return (d.getDay()==0||d.getDay()==6)?(+S.wgoal||+S.goal):+S.goal}
+function logTotalFor(dateKey,obj){if(!obj)return 0;if(dateKey===today)return total();if(typeof obj.totalMl==="number")return obj.totalMl;var sum=0,oldPlan=build(dateKey);oldPlan.forEach(function(q){if((obj.done||[]).indexOf(q.id)>-1)sum+=q.a});return sum+(obj.extra||[]).reduce(function(a,b){return a+(typeof b==="number"?b:+b.amount||0)},0)}
+function getWeek(){var out=[];for(var i=6;i>=0;i--){var d=new Date();d.setDate(d.getDate()-i);var key=localDay(d),entry=load("log:"+key,{done:[],extra:[]}),value=logTotalFor(key,entry);out.push({key:key,date:d,total:value,goal:typeof entry.goalMl==="number"?entry.goalMl:goalForDay(d),has:!!entry.updatedAt||key===today&&value>0})}return out}
+function streakCount(){var n=0,d=new Date();while(n<366){var k=localDay(d),entry=load("log:"+k,{done:[],extra:[]}),v=logTotalFor(k,entry),g=typeof entry.goalMl==="number"?entry.goalMl:goalForDay(d);if(!(g>0&&v>=g))break;n++;d.setDate(d.getDate()-1)}return n}
+function drawHistory(){var days=getWeek(),max=Math.max(1,...days.map(function(d){return d.goal})),bars="",rows="";days.forEach(function(d){var pct=Math.min(100,Math.round(d.total/max*100)),label=d.date.toLocaleDateString(undefined,{weekday:"short"});bars+='<div class="hday '+(d.key===today?"today":"")+'" title="'+d.key+': '+d.total+' ml"><div class="htrack"><i class="hfill" style="height:'+pct+'%"></i></div><b>'+label+'</b><span>'+d.total+'</span></div>';rows+='<div class="partner-day"><span>'+d.date.toLocaleDateString(undefined,{weekday:"short",month:"short",day:"numeric"})+'</span><strong>'+d.total+' / '+d.goal+' ml</strong></div>'});$("weekBars").innerHTML=bars;$("weekList").innerHTML=rows;var st=streakCount();$("streakInfo").textContent=st?"🔥 Current goal streak: "+st+" day"+(st===1?"":"s")+". Keep it gentle and realistic.":"Your goal streak starts when you meet your chosen daily target. Missing a day is okay—start again tomorrow."}
+
+/* original anime-style buddies: girl=false boy, girl=true girl */
+function char(girl,md){
+  var species=S.character||"human",palette={human:[girl?"#ff7fb5":"#2f4fa8",girl?"#d9528c":"#1f3577",girl?"#b04fd8":"#3a8fe0","#ffe3d0"],cat:["#8a66c9","#5b3a96","#a65ce2","#f3d8c4"],bunny:["#ed8fb5","#bd5d86","#ad7be8","#fff0e2"],frog:["#54ad7b","#287650","#2d8d70","#bde8a6"],bear:["#b98254","#80502f","#5987d7","#edc7a1"]},pal=palette[species]||palette.human;
+  var hair=pal[0],dk=pal[1],iris=pal[2],ink="#2a1b2e",sk=pal[3],s="";
+  if(species==="cat")s+='<path d="M29 56L18 22L47 41L60 34L83 41L102 22L93 62Z" fill="'+hair+'" stroke="'+ink+'" stroke-width="2.5"/><path d="M26 38L22 28L40 42M94 38L98 28L80 42" fill="#ffc7dc"/>';
+  if(species==="bunny")s+='<ellipse cx="43" cy="32" rx="10" ry="25" transform="rotate(-14 43 32)" fill="'+hair+'" stroke="'+ink+'" stroke-width="2"/><ellipse cx="77" cy="32" rx="10" ry="25" transform="rotate(14 77 32)" fill="'+hair+'" stroke="'+ink+'" stroke-width="2"/><ellipse cx="43" cy="32" rx="4" ry="16" transform="rotate(-14 43 32)" fill="#ffd4e4"/><ellipse cx="77" cy="32" rx="4" ry="16" transform="rotate(14 77 32)" fill="#ffd4e4"/>';
+  if(species==="frog")s+='<ellipse cx="39" cy="40" rx="16" ry="17" fill="'+hair+'" stroke="'+ink+'" stroke-width="2"/><ellipse cx="81" cy="40" rx="16" ry="17" fill="'+hair+'" stroke="'+ink+'" stroke-width="2"/>';
+  if(species==="bear")s+='<circle cx="34" cy="43" r="13" fill="'+hair+'" stroke="'+ink+'" stroke-width="2"/><circle cx="86" cy="43" r="13" fill="'+hair+'" stroke="'+ink+'" stroke-width="2"/>';
+
+  function eye(x){return '<ellipse cx="'+x+'" cy="70" rx="7.5" ry="9.5" fill="#fff" stroke="'+ink+'" stroke-width="1.5"/><ellipse cx="'+x+'" cy="72" rx="5.5" ry="7.5" fill="'+iris+'"/><circle cx="'+x+'" cy="73" r="3" fill="#1b1230"/><circle cx="'+(x+2)+'" cy="68.5" r="2.4" fill="#fff"/><circle cx="'+(x-2)+'" cy="75" r="1.1" fill="#fff"/>'}
+  var closed=md=="cheer"||md=="pet",st='stroke="'+ink+'" stroke-width="3" fill="none" stroke-linecap="round"';
+  if(girl)s+='<path d="M28 60Q2 66 8 116Q24 110 30 84z" fill="'+hair+'"/><path d="M92 60Q118 66 112 116Q96 110 90 84z" fill="'+hair+'"/>';
+  s+='<rect x="48" y="124" width="9" height="16" rx="4" fill="'+sk+'"/><rect x="63" y="124" width="9" height="16" rx="4" fill="'+sk+'"/><ellipse cx="52" cy="141" rx="8" ry="4" fill="'+dk+'"/><ellipse cx="68" cy="141" rx="8" ry="4" fill="'+dk+'"/>';
+  s+=girl?'<path d="M44 94h32l9 32H35z" fill="#fff" stroke="#ff8fb8" stroke-width="2"/>':'<rect x="42" y="94" width="36" height="30" rx="10" fill="#3b82f6"/><path d="M52 94l8 8 8-8" stroke="#fff" fill="none" stroke-width="3"/>';
+  var arms=md=="cheer"?"M44 104q-18-4-20-26M76 104q18-4 20-26":md=="sad"?"M44 104q-4 12 0 22M76 104q4 12 0 22":"M44 104q-10 8-8 20M76 104q10 8 8 20";
+  s+='<path d="'+arms+'" stroke="'+sk+'" stroke-width="6" fill="none" stroke-linecap="round"/>';
+  s+='<ellipse cx="60" cy="64" rx="34" ry="32" fill="'+sk+'"/><ellipse cx="34" cy="82" rx="6" ry="3.5" fill="#ff9db0" opacity="'+(md=="pet"?.9:.5)+'"/><ellipse cx="86" cy="82" rx="6" ry="3.5" fill="#ff9db0" opacity="'+(md=="pet"?.9:.5)+'"/>';
+  s+=closed?'<path d="M37 71q7-9 14 0M69 71q7-9 14 0" '+st+'/>':eye(44)+eye(76);
+  if(md=="sad")s+='<path d="M35 60q9-1 17-7M85 60q-9-1-17-7" stroke="'+dk+'" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M38 78q6 5 12 0M70 78q6 5 12 0" stroke="#bfe6ff" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M36 83q-3 6 0 8q3-2 0-8z" fill="#8fd3ff" opacity=".85"/>';
+  s+=md=="cheer"?'<path d="M50 86q10 14 20 0z" fill="#8a2f4a"/>':md=="sad"?'<path d="M54 92q6-4 12 0" '+st+'/>':md=="pet"?'<path d="M54 88q6 4 12 0" '+st+'/>':'<path d="M52 87q8 7 16 0" '+st+'/>';
+  s+=girl?'<path d="M24 62C20 30 40 12 60 12s40 18 36 50C88 50 78 44 60 44S32 50 24 62z" fill="'+hair+'"/><path d="M24 62q-2 20 6 30l4-26zM96 62q2 20-6 30l-4-26z" fill="'+hair+'"/><path d="M88 22l-11-9v18zM88 22l11-9v18z" fill="#fff" stroke="#ff8fb8" stroke-width="1.5"/><circle cx="88" cy="22" r="3.5" fill="#ff8fb8"/>':'<path d="M24 62C20 30 40 12 60 12s40 18 36 50l-7-10-7 6-9-10-9 8-9-8-9 10-7-6z" fill="'+hair+'"/><path d="M24 62q-2 14 4 22l4-20zM96 62q2 14-4 22l-4-20z" fill="'+hair+'"/>';
+  if(species==="cat")s+='<path d="M37 84L30 80M37 89L28 90M83 84L90 80M83 89L92 90" stroke="'+ink+'" stroke-width="1.7" stroke-linecap="round"/><path d="M56 84L60 88L64 84Z" fill="#e982a9"/>';
+  if(species==="frog")s+='<circle cx="60" cy="83" r="11" fill="#a8dd82" opacity=".8"/>';
+  if(species==="bear")s+='<ellipse cx="60" cy="83" rx="14" ry="10" fill="#f5dfc7"/><circle cx="60" cy="81" r="3" fill="'+ink+'"/>';
+  return s;
+}
+function plant(p){var h=14+p*70,s='<g transform="translate(300 190)"><path d="M0 0V-'+h+'" stroke="#2f7d5b" stroke-width="5" stroke-linecap="round"/>';
+  if(p>.2)s+='<path d="M0 -22q-20 -4 -22 -20q18 0 22 20z" fill="#4fb57a"/>';if(p>.5)s+='<path d="M0 -40q20 -4 22 -20q-18 0 -22 20z" fill="#5fc795"/>';
+  s+=p>=1?'<circle cy="-'+(h+4)+'" r="9" fill="#ff9db0"/><circle cy="-'+(h+4)+'" r="4" fill="#ffd45e"/>':'<circle cy="-'+h+'" r="5" fill="#8ad3a6"/>';return s+'</g>'}
+function art(p){
+  var pk=S.skin=="pink",h='<svg viewBox="0 0 360 200"><defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--sky2)"/><stop offset="1" stop-color="var(--sky)"/></linearGradient></defs><rect width="360" height="200" fill="url(#sk)"/><circle cx="48" cy="62" r="20" fill="var(--sun)"/>';
+  if(!pk){h+='<g class="drift" fill="#fff" opacity=".92"><ellipse cx="90" cy="46" rx="32" ry="11"/><ellipse cx="112" cy="38" rx="18" ry="10"/></g><g class="drift" style="animation-duration:27s;animation-direction:alternate-reverse" fill="#fff" opacity=".85"><ellipse cx="250" cy="88" rx="28" ry="9"/><ellipse cx="268" cy="81" rx="15" ry="8"/></g><path d="M0 160Q90 140 180 158T360 150V200H0z" fill="var(--hill1)"/><path d="M0 182Q120 168 360 184V200H0z" fill="var(--hill2)"/>';
+    h+='<g transform="translate(305 '+(150-p*90)+')"><g class="hop"><ellipse rx="17" ry="21" fill="#ff8f8f"/><path d="M-17 0Q0 40 17 0" fill="#ffd45e"/><rect x="-6" y="36" width="12" height="8" rx="2" fill="#8a5a2b"/></g></g>'}
+  else{h+='<path d="M0 150Q70 120 150 146T360 136V200H0z" fill="var(--hill1)"/><path d="M0 178Q110 156 200 176T360 168V200H0z" fill="var(--hill2)"/>';
+    [[70,120,0],[290,110,1.6],[200,80,3.1],[120,60,4.2]].forEach(function(q){h+='<text class="heart" x="'+q[0]+'" y="'+q[1]+'" font-size="14" style="animation-delay:'+q[2]+'s">💗</text>'});
+    h+='<text class="hop" x="28" y="186" font-size="26">🐥</text><text class="hop" x="66" y="190" font-size="26" style="animation-delay:.6s">🐱</text>'+plant(p)}
+  $("art").innerHTML=h+'<svg x="120" y="40" width="120" height="150" viewBox="0 0 120 150"><g class="bob" id="chg">'+char(pk,mood)+'</g></svg></svg>';
+}
+function jump(){var g=$("chg");if(g){g.classList.remove("bob");void g.getBoundingClientRect();g.classList.add("jump");setTimeout(function(){g.classList.remove("jump");g.classList.add("bob")},650)}}
+function flash(md,ms){temp=md;render();jump();setTimeout(function(){temp="";say="";render()},ms)}
+function burst(n,em){var sc=$("scene");em=em||(S.skin=="pink"?["💖","🌸","✨"]:["💧","✨","⭐"]);
+  for(var i=0;i<n;i++)(function(i){var s=document.createElement("span");s.className="bit";s.textContent=em[i%em.length];s.style.setProperty("--x",(Math.random()*240-120)+"px");s.style.setProperty("--y",(-20-Math.random()*140)+"px");sc.appendChild(s);setTimeout(function(){s.remove()},1100)})(i)}
+var R={drink:["Glug glug! Nice one!","Yum! Stay hydrated!","That’s the way!","Refreshing! Keep going!"],sad:["I’m thirsty… sip soon? 🥺","Water break? Pretty please?","Okay… but I’ll wait for you."],pet:["Hehe, that tickles!","Again again!","You’re sweet. Now a sip?","Aww! Water makes me happier."]};
+function reactDrink(){if(total()>=goalForDay(new Date())){say="Goal reached!! You’re amazing!";burst(16);flash("cheer",2600)}else{say=pick(R.drink);burst(6);flash("cheer",1800)}}
+function render(){
+  today=localDay(new Date());if(!L||L._date!==today){L=load("log:"+today,{done:[],extra:[]});L._date=today}
+  plan=build();var tot=total(),weekend=(new Date().getDay()==0||new Date().getDay()==6),g=weekend?(+S.wgoal||+S.goal):+S.goal,p=Math.min(1,tot/g),n=nowM(),late=plan.filter(function(q){return L.done.indexOf(q.id)<0&&q.t<=n-30}).length;
+  L.totalMl=tot;L.goalMl=g;L.updatedAt=L.updatedAt||new Date().toISOString();save("log:"+today,L);
+  mood=temp||(tot>=g?"cheer":late?"sad":"happy");
+  document.documentElement.dataset.skin=S.skin||"blue";
+  var nm=S.name||"friend";$("hi").textContent="Hi, "+nm+"!";$("hs").textContent=new Date().toLocaleDateString(undefined,{weekday:"long",month:"short",day:"numeric"});
+  $("bn").textContent=S.buddy||"Coco";
+  art(p);
+  var inCol=n>=m(S.cs)&&n<=m(S.ce);
+  $("bubble").textContent=say||(tot>=g?"Goal reached!! You’re amazing!":late?"I’m thirsty… you missed "+late+" drink"+(late>1?"s":"")+".":inCol?"Tiny sips only. No washroom trip needed.":"Water time is the best time!");
+  $("prog").textContent=tot+" / "+g+" ml";$("left").textContent=tot>=g?"Goal reached!":(g-tot)+" ml to go";$("fill").style.width=(p*100)+"%";
+  var h="";if(!plan.length)h="<p class='note'>Check Account: wake, college start, college end and sleep must be in order.</p>";
+  plan.forEach(function(q){var d=L.done.indexOf(q.id)>-1;h+="<button class='chip"+(q.z=="college"?" c":"")+(d?" done":q.t<=n-30?" late":"")+"' data-id='"+q.id+"' aria-label='"+f(q.t)+" "+q.a+" ml'><b>"+f(q.t).replace(" ","")+"</b><small>"+q.a+" ml</small></button>"});
+  $("strip").innerHTML=h;
+  var open=plan.filter(function(q){return L.done.indexOf(q.id)<0}),lt=open.filter(function(q){return q.t<=n})[0],nx=lt||open[0];
+  var bt=$("nextBtn"),sb=$("skipBtn");
+  if(!nx){$("nt").textContent="All done for today";$("ns").textContent=(S.buddy||"Coco")+" says great job.";bt.style.display=sb.style.display="none"}
+  else{bt.style.display=sb.style.display="";bt.dataset.id=nx.id;$("nt").textContent=(lt?"Time to drink: ":"Next: ")+nx.a+" ml at "+f(nx.t);$("ns").textContent=nx.label||(nx.z=="college"?"Just a few small sips.":"Drink it slowly at home.")}
+  $("av").innerHTML=char(S.gender==="female","happy");$("an").textContent=nm;$("as").textContent=(S.age?S.age+" yrs · ":"")+(S.gender||"")+" · goal "+g+" ml";
+  drawHistory();
+}
+function toggle(id){var i=L.done.indexOf(id);if(i>-1)L.done.splice(i,1);else L.done.push(id);persistLog();say="";render();maybeSyncLog();if(i<0){reactDrink();tone()}}
+function go(i){page=Math.max(0,Math.min(2,i));$("track").style.transform="translateX("+(-page*$("pages").clientWidth)+"px)";document.querySelectorAll(".tabs button").forEach(function(b,k){b.classList.toggle("on",k==page)})}
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+function drawChat(){var h="";if(!CH.length)h="<div class='msg ai'>Hi! Tell me about your day: where you go, when you drink, and what makes it hard.</div>";
+  CH.slice(-16).forEach(function(c){h+="<div class='msg "+c.r+"'>"+esc(c.t)+"</div>"});["olog","clog"].forEach(function(id){var l=$(id);l.innerHTML=h;l.scrollTop=l.scrollHeight})}
+var IDS=["name","age","gender","buddy","character","wake","sleep","cs","ce","goal","csip","sipsz","glasssz","wwake","wsleep","wgoal"];
+function sync(){IDS.forEach(function(k){$(k).value=S[k]})}
+async function send(px){
+  var inp=$(px+"msg"),txt=inp.value.trim();if(!txt)return;inp.value="";if(txt.length>400)txt=txt.slice(0,400);
+  CH.push({r:"me",t:txt});CH.push({r:"ai",t:"Thinking…"});drawChat();$("ofin").textContent="Finish setup";
+  var last=CH[CH.length-1],hist=CH.slice(-9,-2).map(function(c){return{role:c.r==="me"?"user":"assistant",content:c.t}}),
+  ctx={buddy:S.buddy,character:S.character,user:{name:S.name},firstTimeSetup:!S.onboarded,now:f(nowM()),wake:S.wake,sleep:S.sleep,collegeStart:S.cs,collegeEnd:S.ce,weekendWake:S.wwake,weekendSleep:S.wsleep,goalMl:(new Date().getDay()==0||new Date().getDay()==6)?S.wgoal:S.goal,collegeSipMlPerHour:S.csip,sipButtonMl:S.sipsz,glassButtonMl:S.glasssz,extras:S.extras,drankTodayMl:total(),plan:plan.map(function(q){return f(q.t)+" "+q.a+"ml "+q.z+(L.done.indexOf(q.id)>-1?" done":"")}),memory:S.memory},result=null;
+  try{
+    if(CLOUD.api&&cloud.client){
+      try{result=await cloudRequest("/api/chat","POST",{message:txt,history:hist,context:ctx})}catch(err){result=null}
+    }
+    if(!result&&window.claude){var sample=await claude.use("sample");if(sample){var prompt=makePrompt(txt,hist,ctx);var r=await sample(prompt,{cache:false}),raw=(r&&r.text)||"",a=raw.indexOf("{"),b=raw.lastIndexOf("}");try{result=JSON.parse(raw.slice(a,b+1))}catch(e){result={reply:raw.replace(/```json|```/g,"").trim()||"Sorry, try that again."}}}}
+    if(!result)result=answerLocalChat(txt);
+    if(typeof result==="string")result={reply:result};if(!result.reply)result.reply="Got it. Let’s keep your water plan comfortable and realistic.";
+    var ch=[],bak=JSON.parse(JSON.stringify(S)),U=result.updates||{},Rg={goal:[500,5000],wgoal:[500,5000],csip:[0,300],sipsz:[20,300],glasssz:[100,1000]};
+    Object.keys(Rg).forEach(function(k){var v=+U[k];if(U[k]!==undefined&&v>=Rg[k][0]&&v<=Rg[k][1]&&v!==S[k]){S[k]=Math.round(v);ch.push(k)}});
+    if(U.reminderInterval!==undefined){var ri=+U.reminderInterval;if([15,20,30,45,60,90,120].indexOf(ri)>=0&&ri!==+S.reminderInterval){S.reminderInterval=ri;$('reminderInterval').value=String(ri);if(S.reminderEnabled)S.lastReminderAt=Date.now();ch.push('reminder interval '+ri+' min')}}
+    ["wake","sleep","cs","ce","wwake","wsleep"].forEach(function(k){if(/^([01]\d|2[0-3]):[0-5]\d$/.test(U[k]||"")&&U[k]!==S[k]){S[k]=U[k];ch.push(k)}});
+    if(Array.isArray(result.extras)){S.extras=result.extras.slice(0,6).filter(function(x){return x&&/^([01]\d|2[0-3]):[0-5]\d$/.test(x.t)}).map(function(x){return{t:x.t,a:Math.min(500,Math.max(20,Math.round(+x.a||100))),z:x.z==="college"?"college":"home",label:String(x.label||"").slice(0,30)}});ch.push("extra reminders")}
+    if(!build().length){S=bak;ch=[]}
+    var ml=Math.round(+result.logMl||0);if(ml>0&&ml<=3000){L.extra.push(ml);persistLog();ch.push(ml+" ml logged")}
+    if(typeof result.memory==="string"&&result.memory.trim())S.memory=((S.memory||"")+" | "+result.memory.trim()).slice(-700);
+    save("cfg",S);sync();say="";render();maybeSyncProfile();schedulePushIfEnabled();
+    var rep=String(result.reply||"Got it!");last.t=rep+(ch.length?"\n✓ Plan updated: "+ch.join(", "):"");talk(rep.slice(0,90));
+  }catch(err){last.t="Could not reach the AI service. Check your internet connection, backend URL, and AI provider setup. Your tracker data is still saved on this device."}
+  saveChat();drawChat();
+}
+function answerLocalChat(txt){
+  var t=String(txt||"").toLowerCase(),result={reply:"I’m here with you! Let’s make this routine easy and comfortable.",updates:{}};
+  var goalMatch=t.match(/(?:goal|target)\D{0,24}(\d{3,4})\s*(?:ml)?/i)||t.match(/(?:set|change|make|increase|decrease)\D{0,24}(\d{3,4})\s*(?:ml)?/i);
+  if(goalMatch){var g=+goalMatch[1];if(g>=500&&g<=5000){result.updates.goal=g;result.reply="Okay! I’ll set your daily goal to "+g+" ml. You can change it anytime in Account. This is a personal tracker target, not medical advice.";return result}}
+  var intervalMatch=t.match(/(?:every|interval|remind(?:er)?|alarm)\D{0,24}(15|20|30|45|60|90|120)\s*(?:min|mins|minute|minutes)?/i);
+  if(intervalMatch&&/(remind|alarm|every|interval)/i.test(t)){result.updates.reminderInterval=+intervalMatch[1];result.reply="Got it. I’ve set the free reminder interval to every "+intervalMatch[1]+" minutes. Open Account → Free drink alarms and tap Start free alarms.";return result}
+  var vol=t.match(/\b(\d{2,4})\s*(?:ml|millilit(?:er|re)s?)\b/i);
+  if(vol&&/(drank|drink|had|finished|consumed|logged|log|sipped|just)/i.test(t)&&+vol[1]<=3000){result.logMl=+vol[1];result.reply="Logged "+vol[1]+" ml for you. Nice job checking in! Drink at a comfortable pace.";return result}
+  if(/(how much|how many).*(drank|drink|water|today)|(my progress|progress today|how am i doing)/i.test(t)){result.reply="You’ve logged "+total()+" ml today, with a personal target of "+((new Date().getDay()===0||new Date().getDay()===6)?(+S.wgoal||+S.goal):+S.goal)+" ml. Your week chart is on the Home page. Any target is adjustable—consistency matters more than perfection.";return result}
+  if(/(forget|forgot|college|class|busy|remind|alarm|notification)/i.test(t)){result.reply="A small routine can help: keep your bottle where you can see it and take comfortable sips during breaks. Open Account → Free drink alarms, choose 30, 45 or 60 minutes, then tap Start free alarms. Keep SipPlan open for this free alarm to run.";return result}
+  if(/(goal|target|how much water|amount|litre|liter)/i.test(t)){result.reply="There isn’t one perfect water target for everyone. You can set a comfortable personal goal in Account. Follow your thirst and any advice from your healthcare professional, especially if you have a condition that affects fluids.";return result}
+  if(/(hello|hi\b|hey\b|good morning|good evening)/i.test(t)){result.reply="Hey "+(S.name||"friend")+"! 💧 I’m "+(S.buddy||"Coco")+", your free SipPlan buddy. Tell me when you usually forget water, ask about your progress, or say ‘I drank 250 ml’ and I’ll log it.";return result}
+  if(/(week|streak|history|consistent)/i.test(t)){result.reply="Your last seven days and your current goal streak are shown on the Home page under Your week. It’s okay to miss a day—just start again when you’re ready.";return result}
+  result.reply="I’m your free on-device buddy, so I can help with simple water logs, goals, reminders and weekly progress. Try ‘I drank 250 ml’, ‘set my goal to 2200 ml’, or ‘remind me every 30 minutes’. Full generative AI needs a hosted service, but this basic helper is free.";
+  return result;
+}
+function makePrompt(txt,hist,ctx){return "You are "+(S.buddy||"Coco")+", a warm hydration buddy. Be brief (max 60 words, at most one question), nonjudgmental, and not a doctor. Do not diagnose or insist on a fixed hydration amount. Needs differ; tell users to follow clinician advice if relevant. Only adjust a setting when the user clearly asks. If symptoms or a health condition are mentioned, recommend asking a qualified clinician. Context: "+JSON.stringify(ctx)+"\nRecent conversation: "+JSON.stringify(hist)+"\nUser: "+txt+"\nReturn JSON only: {\"reply\":string,\"updates\":optional object with goal/wgoal(500-5000),csip(0-300),sipsz(20-300),glasssz(100-1000),wake/sleep/cs/ce/wwake/wsleep in HH:MM,\"extras\":optional array up to 6 of {t:\"HH:MM\",a:number,z:\"home\"|\"college\",label:string},\"logMl\":number if the user clearly said they drank it, otherwise 0,\"memory\":short preference or empty string}."}
+function saveChat(){try{localStorage.setItem(KEY+"chat",JSON.stringify(CH.slice(-30)))}catch(e){}}
+
+
+function cloudSay(msg){if($("cloudNote"))$("cloudNote").textContent=msg}
+function cloudInit(){if(!window.supabase||!CLOUD.url||!CLOUD.anon){cloudSay("Free test mode: your tracker, weekly history, local buddy chat, and on-page alarms work on this device. Cloud AI, shared accounts, and closed-app push need a separately hosted backend.");return}
+  try{cloud.client=window.supabase.createClient(CLOUD.url,CLOUD.anon);cloud.ready=true;$("cloudUrl").value=CLOUD.url;$("cloudAnon").value=CLOUD.anon;$("apiUrl").value=CLOUD.api;cloud.client.auth.getSession().then(function(r){cloud.session=r.data&&r.data.session;if(cloud.session){cloudSay("Signed in as "+cloud.session.user.email+". Sync is ready.");syncCurrentData();refreshPartner()}else cloudSay("Connection configured. Create an account or sign in to enable cloud features.")});cloud.client.auth.onAuthStateChange(function(_event,session){cloud.session=session;if(session){cloudSay("Signed in as "+session.user.email+". Sync is ready.");syncCurrentData();refreshPartner()}else{cloudSay("Signed out. Local data remains on this device.");$("partnerStatus").textContent="Not connected to a partner.";$("partnerProgress").innerHTML=""}})}catch(e){cloudSay("Could not initialize Supabase. Check the URL and public key.")}}
+function saveCloudSettings(){CLOUD.url=$("cloudUrl").value.trim().replace(/\/$/,"");CLOUD.anon=$("cloudAnon").value.trim();CLOUD.api=$("apiUrl").value.trim().replace(/\/$/,"")||((location.protocol==="http:"||location.protocol==="https:")?location.origin:"");$("apiUrl").value=CLOUD.api;save("cloud",CLOUD);cloud.client=null;cloud.session=null;cloud.ready=false;cloudInit()}
+async function cloudRequest(path,method,body){if(!CLOUD.api||!cloud.client)throw new Error("Cloud connection is not configured");var ss=await cloud.client.auth.getSession(),tok=ss.data&&ss.data.session&&ss.data.session.access_token;if(!tok)throw new Error("Sign in first");var res=await fetch(CLOUD.api+path,{method:method||"GET",headers:Object.assign({"Content-Type":"application/json","Authorization":"Bearer "+tok},{}),body:body?JSON.stringify(body):undefined});var data={};try{data=await res.json()}catch(e){}if(!res.ok)throw new Error(data.error||("Backend returned "+res.status));return data}
+function switchLocalOwner(uid){var ownerKey=KEY+"owner",old=localStorage.getItem(ownerKey)||"";if(old===uid){return false}if(old){Object.keys(localStorage).forEach(function(k){if(k.indexOf(KEY)===0&&k!==KEY+"cloud"&&k!==ownerKey&&k.indexOf(KEY+"backup:")!==0){var suffix=k.slice(KEY.length);try{localStorage.setItem(KEY+"backup:"+old+":"+suffix,localStorage.getItem(k));localStorage.removeItem(k)}catch(e){}}})}var prefix=KEY+"backup:"+uid+":";Object.keys(localStorage).forEach(function(k){if(k.indexOf(prefix)===0){var suffix=k.slice(prefix.length);try{localStorage.setItem(KEY+suffix,localStorage.getItem(k));localStorage.removeItem(k)}catch(e){}}});localStorage.setItem(ownerKey,uid);S=load("cfg",DEF);CH=[];try{CH=JSON.parse(localStorage.getItem(KEY+"chat")||"[]")}catch(e){}L=load("log:"+today,{done:[],extra:[]});L._date=today;sync();render();drawChat();return true}
+async function syncCurrentData(){if(!cloud.session||!CLOUD.api)return;try{switchLocalOwner(cloud.session.user.id);var prof=await cloudRequest("/api/profile");if(prof.profile){var cp=prof.profile,cs=cp.settings&&typeof cp.settings==="object"?cp.settings:{};S.name=String(cp.display_name||S.name||"").slice(0,30);S.buddy=String(cp.buddy||S.buddy||"Coco").slice(0,20);S.character=["human","cat","bunny","frog","bear"].indexOf(cp.character)>=0?cp.character:"human";S.goal=Math.min(5000,Math.max(500,+cp.goal_ml||S.goal));S.skin=cp.skin==="pink"?"pink":"blue";["age","gender","wake","sleep","cs","ce","csip","sipsz","glasssz","wwake","wsleep","wgoal","extras","soundOn"].forEach(function(k){if(cs[k]!==undefined)S[k]=cs[k]});S.onboarded=true;save("cfg",S);sync();$("onb").hidden=true;$("soundOn").checked=!!S.soundOn}else await maybeSyncProfile(true);var data=await cloudRequest("/api/logs?days=30");(data.logs||[]).forEach(function(x){if(!x.date)return;var cur=load("log:"+x.date,{done:[],extra:[]}),localHas=(+cur.totalMl||0)>0||(cur.done||[]).length>0||(cur.extra||[]).length>0;if(!localHas){cur.totalMl=+x.total_ml||0;cur.goalMl=+x.goal_ml||0;cur.updatedAt=x.updated_at||new Date().toISOString();if(x.detail&&typeof x.detail==="object"){cur.done=Array.isArray(x.detail.done)?x.detail.done:cur.done;cur.extra=Array.isArray(x.detail.extra)?x.detail.extra:cur.extra}save("log:"+x.date,cur);if(x.date===today){L=cur;L._date=today}}});plan=build();render();await maybeSyncProfile(true);await maybeSyncLog(true);drawHistory();cloudSay("Signed in. Recent daily totals and profile are syncing securely.");if(S.pushEnabled)schedulePushIfEnabled();}catch(e){cloudSay("Signed in, but sync needs attention: "+e.message)}}
+var syncTimer=null;function maybeSyncProfile(immediate){if(!cloud.session||!CLOUD.api)return Promise.resolve();var data={display_name:String(S.name||"SipPlan user").slice(0,30),buddy:String(S.buddy||"Coco").slice(0,20),character:String(S.character||"human"),goal_ml:Math.min(5000,Math.max(500,+S.goal||2000)),skin:S.skin==="pink"?"pink":"blue",settings:{age:+S.age||0,gender:S.gender,wake:S.wake,sleep:S.sleep,cs:S.cs,ce:S.ce,goal:+S.goal||2000,csip:+S.csip||0,sipsz:+S.sipsz||150,glasssz:+S.glasssz||250,wwake:S.wwake,wsleep:S.wsleep,wgoal:+S.wgoal||+S.goal||2000,extras:(S.extras||[]).slice(0,6),soundOn:!!S.soundOn}};return cloudRequest("/api/profile","POST",data).catch(function(e){if(immediate)throw e})}
+function maybeSyncLog(immediate){if(!cloud.session||!CLOUD.api)return Promise.resolve();var daily=[];for(var i=0;i<30;i++){var d=new Date();d.setDate(d.getDate()-i);var k=localDay(d),v=load("log:"+k,{done:[],extra:[]});if(k===today){v.totalMl=total();v.goalMl=goalForDay(d)}if(v.updatedAt||k===today&&v.totalMl>0)daily.push({date:k,total_ml:Math.max(0,Math.round(+v.totalMl||0)),goal_ml:Math.max(0,Math.round(+v.goalMl||0)),detail:{done:(v.done||[]).slice(0,100),extra:(v.extra||[]).slice(0,100)}})}return cloudRequest("/api/logs","POST",{logs:daily}).catch(function(e){if(immediate)throw e})}
+function scheduleWeeklySlots(){var slots=[];for(var d=0;d<7;d++){var date=new Date();date.setDate(date.getDate()+((d-date.getDay()+7)%7));var key=localDay(date);build(key).forEach(function(q){slots.push({day:d,time:String(Math.floor(q.t/60)).padStart(2,"0")+":"+String(q.t%60).padStart(2,"0"),amount:q.a})})}return slots.filter(function(q){return q.time&&q.amount>0}).slice(0,160)}
+async function schedulePushIfEnabled(){if(!S.pushEnabled||!cloud.session||!CLOUD.api)return;try{await cloudRequest("/api/push/schedule","POST",{timezone:Intl.DateTimeFormat().resolvedOptions().timeZone||"Asia/Kolkata",slots:scheduleWeeklySlots(),enabled:true})}catch(e){}}
+function b64urlToBytes(base64String){var padding="=".repeat((4-base64String.length%4)%4),base64=(base64String+padding).replace(/-/g,"+").replace(/_/g,"/"),raw=atob(base64),out=new Uint8Array(raw.length);for(var i=0;i<raw.length;++i)out[i]=raw.charCodeAt(i);return out}
+async function enableReminders(){
+  var note=$("notifNote");S.pushEnabled=true;save("cfg",S);
+  if(!window.Notification){note.textContent="Browser notifications are not available here. Free alarms still work while this page is open.";startFreeAlarms(false);return}
+  try{var permission=Notification.permission;if(permission==="default")permission=await Notification.requestPermission();
+    if(permission==="granted"){note.textContent="Browser notifications allowed. Scheduled alerts can appear while this page is open; closed-app delivery needs hosted push setup.";    }else{note.textContent="Browser notifications were not enabled. The free on-page alarms can still sound while SipPlan is open."}
+  }catch(e){note.textContent="Browser notifications are unavailable in this mode. Free alarms still work while open."}
+  startFreeAlarms(false);
+}
+function alarmStatus(text){var el=$("alarmStatus");if(el)el.textContent=text}
+function showAlarmToast(test){var el=$("alarmToast"),msg=$("alarmToastText");if(!el)return;msg.textContent=test?"Test alert: your free SipPlan alarm is ready. Drink a comfortable sip when you need one.":"It’s time for a comfortable water break. Take a sip if you’re thirsty.";el.style.display="block";if(window._sipToastTimer)clearTimeout(window._sipToastTimer);window._sipToastTimer=setTimeout(function(){el.style.display="none"},18000)}
+var alarmAudio=null;
+function unlockAlarmAudio(){try{var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return null;if(!alarmAudio)alarmAudio=new AC();if(alarmAudio.state==="suspended")alarmAudio.resume();return alarmAudio}catch(e){return null}}
+function playAlarmSound(){if(S.alarmSoundOn===false)return;var c=unlockAlarmAudio();if(!c)return;[660,880,660].forEach(function(freq,i){setTimeout(function(){try{var o=c.createOscillator(),g=c.createGain();o.type="sine";o.frequency.value=freq;g.gain.value=.045;o.connect(g);g.connect(c.destination);var when=c.currentTime;o.start(when);g.gain.setValueAtTime(.045,when);g.gain.exponentialRampToValueAtTime(.001,when+.24);o.stop(when+.25)}catch(e){}},i*310)})}
+function triggerFreeAlarm(test){showAlarmToast(!!test);playAlarmSound();try{if(navigator.vibrate)navigator.vibrate([180,100,180])}catch(e){}
+  if(!test&&window.Notification&&Notification.permission==="granted"&&window.isSecureContext){try{if(navigator.serviceWorker&&navigator.serviceWorker.controller){navigator.serviceWorker.ready.then(function(r){return r.showNotification((S.buddy||"Coco")+" says: water time 💧",{body:"A gentle reminder. Take a comfortable sip if you need one.",tag:"sipplan-free-interval"})}).catch(function(){})}else new Notification((S.buddy||"Coco")+" says: water time 💧",{body:"A gentle reminder. Take a comfortable sip if you need one."})}catch(e){}}
+}
+function scanFreeAlarm(){if(!S.reminderEnabled)return;var interval=Math.max(15,+S.reminderInterval||45)*60000,last=+S.lastReminderAt||Date.now();if(Date.now()-last>=interval){S.lastReminderAt=Date.now();save("cfg",S);triggerFreeAlarm(false);alarmStatus("Alarms are ON — next reminder in about "+(S.reminderInterval||45)+" minutes. Keep this page open.")}}
+function startFreeAlarms(fromTap){S.reminderEnabled=true;S.reminderInterval=[15,20,30,45,60,90,120].indexOf(+$("reminderInterval").value)>=0?+$("reminderInterval").value:Math.max(15,+S.reminderInterval||45);S.alarmSoundOn=$("alarmSoundOn")?$("alarmSoundOn").checked:S.alarmSoundOn!==false;if(fromTap||!+S.lastReminderAt)S.lastReminderAt=Date.now();save("cfg",S);unlockAlarmAudio();if(window._sipFreeAlarmTimer)clearInterval(window._sipFreeAlarmTimer);window._sipFreeAlarmTimer=setInterval(scanFreeAlarm,5000);alarmStatus("Alarms are ON — I’ll remind you every "+S.reminderInterval+" minutes while this page stays open.");var b=$("startFreeAlarm");if(b)b.textContent="Free alarms are ON ✓"}
+function stopFreeAlarms(){S.reminderEnabled=false;save("cfg",S);if(window._sipFreeAlarmTimer){clearInterval(window._sipFreeAlarmTimer);window._sipFreeAlarmTimer=null}alarmStatus("Free alarms are off. Tap Start free alarms to begin again.");var b=$("startFreeAlarm");if(b)b.textContent="Start free alarms";try{if(navigator.vibrate)navigator.vibrate(0)}catch(e){}}
+function startLocalReminderCheck(){if(!window.Notification||Notification.permission!=="granted")return;var scan=function(){if(!S.pushEnabled)return;var n=nowM();plan.forEach(function(q){var slot=today+"|"+q.t;if(Math.abs(q.t-n)<1&&L.done.indexOf(q.id)<0&&!reminderSent[slot]){reminderSent[slot]=1;try{if(navigator.serviceWorker&&navigator.serviceWorker.controller)navigator.serviceWorker.ready.then(function(r){r.showNotification((S.buddy||"Coco")+" says: planned sip time 💧",{body:"A gentle reminder for your planned sip of about "+q.a+" ml.",icon:"./app-icon.svg",tag:"sipplan-"+slot})});else if(window.isSecureContext)new Notification((S.buddy||"Coco")+" says: planned sip time 💧",{body:"A gentle reminder for your planned sip of about "+q.a+" ml."})}catch(e){}}})};if(!window._sipLocalTimer){window._sipLocalTimer=setInterval(scan,15000);scan()}}
+function tone(){if(!S.soundOn)return;try{var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;var c=new AC(),o=c.createOscillator(),g=c.createGain();o.type="sine";o.frequency.value=660;g.gain.value=.035;o.connect(g);g.connect(c.destination);o.start();g.gain.exponentialRampToValueAtTime(.001,c.currentTime+.22);o.stop(c.currentTime+.23);setTimeout(function(){c.close()},350)}catch(e){}}
+async function cloudButton(id,fn){$(id).addEventListener("click",async function(){try{await fn()}catch(e){cloudSay("Action failed: "+e.message)}})}
+function partnerView(data){var el=$("partnerStatus"),out=$("partnerProgress");if(!data||!data.partner){el.textContent="Not connected to a partner. Create an invite code or join one.";out.innerHTML="";return}var p=data.partner;el.textContent="Connected with "+(p.display_name||"your partner")+". You can view each other’s shared hydration progress.";out.innerHTML="<h3 style='margin:6px 0 0'>"+esc(p.display_name||"Partner")+"’s recent water totals</h3>"+(p.logs||[]).map(function(q){return '<div class="partner-day"><span>'+esc(q.date)+'</span><strong>'+Math.round(q.total_ml||0)+' / '+Math.round(q.goal_ml||0)+' ml</strong></div>'}).join("")}
+async function refreshPartner(){if(!cloud.session||!CLOUD.api)return;try{partnerView(await cloudRequest("/api/pair/status"))}catch(e){$("partnerStatus").textContent="Partner sharing is not ready yet: "+e.message}}
+function setupAccountButtons(){
+  $("cloudUrl").value=CLOUD.url||"";$("cloudAnon").value=CLOUD.anon||"";$("apiUrl").value=CLOUD.api||"";$("soundOn").checked=!!S.soundOn;
+  $("reminderInterval").value=String([15,20,30,45,60,90,120].indexOf(+S.reminderInterval)>=0?+S.reminderInterval:45);$("alarmSoundOn").checked=S.alarmSoundOn!==false;
+  $("startFreeAlarm").addEventListener("click",function(){startFreeAlarms(true)});
+  $("stopFreeAlarm").addEventListener("click",stopFreeAlarms);
+  $("testFreeAlarm").addEventListener("click",function(){unlockAlarmAudio();triggerFreeAlarm(true)});
+  $("dismissAlarm").addEventListener("click",function(){$("alarmToast").style.display="none";try{if(navigator.vibrate)navigator.vibrate(0)}catch(e){}});
+  $("reminderInterval").addEventListener("change",function(){S.reminderInterval=+this.value;if(S.reminderEnabled)S.lastReminderAt=Date.now();save("cfg",S);if(S.reminderEnabled)alarmStatus("Alarms are ON — I’ll remind you every "+S.reminderInterval+" minutes while this page stays open.")});
+  $("alarmSoundOn").addEventListener("change",function(){S.alarmSoundOn=this.checked;save("cfg",S);if(S.alarmSoundOn)unlockAlarmAudio()});
+  $("saveCloud").addEventListener("click",saveCloudSettings);
+  $("cloudStatus").addEventListener("click",async function(){try{if(!CLOUD.api)throw new Error("Save the connection settings first");var r=await fetch(CLOUD.api+"/api/health");if(!r.ok)throw new Error("Backend is not responding");cloudSay("Backend is reachable. AI, account sync, and push still require their server configuration.")}catch(e){cloudSay("Connection test failed: "+e.message)}});
+  $("signupCloud").addEventListener("click",async function(){try{if(!cloud.client)saveCloudSettings();if(!cloud.client)throw new Error("Configure Supabase URL and public key first");var email=$("loginEmail").value.trim(),password=$("loginPassword").value;if(!email||password.length<10)throw new Error("Enter an email and a unique password with at least 10 characters.");var r=await cloud.client.auth.signUp({email:email,password:password});if(r.error)throw r.error;cloudSay(r.data.session?"Account created and signed in.":"Account created. Check your email to confirm sign-in, then return here.")}catch(e){cloudSay("Sign-up failed: "+e.message)}});
+  $("loginCloud").addEventListener("click",async function(){try{if(!cloud.client)saveCloudSettings();if(!cloud.client)throw new Error("Configure Supabase URL and public key first");var r=await cloud.client.auth.signInWithPassword({email:$("loginEmail").value.trim(),password:$("loginPassword").value});if(r.error)throw r.error;cloud.session=r.data.session;cloudSay("Signed in. Syncing your recent records…");await syncCurrentData();await refreshPartner()}catch(e){cloudSay("Sign-in failed: "+e.message)}});
+  $("logoutCloud").addEventListener("click",async function(){try{if(cloud.client)await cloud.client.auth.signOut();cloud.session=null;cloudSay("Signed out. Local data stays on this device.")}catch(e){cloudSay("Sign-out failed: "+e.message)}});
+  cloudButton("invitePartner",async function(){var d=await cloudRequest("/api/pair/invite","POST",{});$("partnerStatus").textContent="Invite code: "+d.code+" (expires in 24 hours). Share it privately with your partner."});
+  cloudButton("joinPartner",async function(){var code=$("inviteCode").value.trim().toUpperCase();if(!code)throw new Error("Enter your partner’s invite code");await cloudRequest("/api/pair/join","POST",{code:code});await refreshPartner();cloudSay("Partner linked. You can both view hydration totals; sign-in details remain private.")});
+  cloudButton("leavePartner",async function(){if(!confirm("Disconnect partner sharing? This does not delete either person’s local logs."))return;await cloudRequest("/api/pair/leave","POST",{});await refreshPartner()});
+  $("disableNotif").addEventListener("click",async function(){S.pushEnabled=false;save("cfg",S);try{if(cloud.session&&CLOUD.api)await cloudRequest("/api/push/disable","POST",{})}catch(e){}$("notifNote").textContent="Browser notifications are turned off. Free interval alarms have their own Start/Stop buttons."});
+  $("refreshPartner").addEventListener("click",refreshPartner);
+  $("testNotif").addEventListener("click",async function(){if(!window.Notification){$("notifNote").textContent="This browser has no notification API. Use Test alarm above to test the free on-page alarm.";return}var p=Notification.permission;if(p!=="granted")p=await Notification.requestPermission();if(p==="granted"){try{if(window.isSecureContext&&navigator.serviceWorker&&navigator.serviceWorker.controller){var r=await navigator.serviceWorker.ready;await r.showNotification("SipPlan test 💧",{body:"Your browser notification is working."})}else if(window.isSecureContext){new Notification("SipPlan test 💧",{body:"Your browser notification is working."})}else{$("notifNote").textContent="This local HTML file cannot use system notifications in this mode. Test alarm still works on the page.";return}$("notifNote").textContent="Test notification sent."}catch(e){$("notifNote").textContent="Could not show the system notification. Use the free on-page Test alarm."}}else $("notifNote").textContent="Notification permission is blocked. Free on-page alarms do not need it."});
+  $("soundOn").addEventListener("change",function(){S.soundOn=$("soundOn").checked;save("cfg",S);if(S.soundOn)tone()});
+}
+
+function talk(t){say=t;$("bubble").textContent=t;jump()}
+function step(n){for(var i=1;i<=4;i++)$("s"+i).hidden=i!=n}
+function finish(){S.onboarded=true;save("cfg",S);$("onb").hidden=true;sync();render();drawChat();go(0)}
+document.addEventListener("click",function(e){
+  var t=e.target.closest("button,#scene");if(!t)return;
+  if(t.dataset.tab){go(+t.dataset.tab);return}
+  if(t.dataset.g){S.gender=t.dataset.g;S.skin=S.gender=="male"?"blue":"pink";S.buddy="Coco";document.documentElement.dataset.skin=S.skin;step(2);return}
+  if(t.dataset.next=="2"){var a=+$("oage").value;if(!(a>=6&&a<=99)){$("e2").textContent="Enter an age from 6 to 99.";return}S.age=Math.round(a);step(3);return}
+  if(t.dataset.next=="3"){var nm=$("oname").value.trim();if(!nm){$("e3").textContent="Please enter a name.";return}S.name=nm;S.goal=baseGoal();save("cfg",S);
+    if(!CH.length)CH.push({r:"ai",t:"Nice to meet you, "+nm+"! Your starter goal is "+S.goal+" ml a day. Where do you spend your day, and when do you usually drink?"});drawChat();step(4);return}
+  if(t.id=="osend"){send("o");return}if(t.id=="csend"){send("c");return}
+  if(t.dataset.q){$("cmsg").value=t.dataset.q;send("c");return}
+  if(t.id=="ofin"){finish();return}
+  if(t.dataset.skin){S.skin=t.dataset.skin;save("cfg",S);say="";render();maybeSyncProfile();return}
+  if(t.dataset.add){L.extra.push(t.dataset.add=="sip"?+S.sipsz:+S.glasssz);persistLog();say="";render();reactDrink();tone();maybeSyncLog();}
+  else if(t.id=="undo"){L.extra.pop();persistLog();say="";render();maybeSyncLog()}
+  else if(t.id=="nextBtn"){var i=t.dataset.id;if(L.done.indexOf(i)<0)toggle(i)}
+  else if(t.id=="skipBtn"){say=pick(R.sad);flash("sad",2600)}
+  else if(t.dataset.id!==undefined){toggle(t.dataset.id)}
+  else if(t.id=="scene"){taps++;say=taps%5==0?"Okay okay! Now let’s drink some water!":pick(R.pet);burst(5,["💖","✨"]);flash("pet",1400)}
+  else if(t.id=="regoal"){S.goal=baseGoal();save("cfg",S);sync();say="New starter goal: "+S.goal+" ml. Adjust it to fit your needs.";render();maybeSyncProfile();schedulePushIfEnabled()}
+  else if(t.id=="reset"){if(t.dataset.arm){try{Object.keys(localStorage).forEach(function(k){if(k.indexOf(KEY)==0)localStorage.removeItem(k)})}catch(x){}location.reload()}else{t.dataset.arm=1;t.textContent="Tap again to erase all data";setTimeout(function(){delete t.dataset.arm;t.textContent="Reset everything"},4000)}}
+  else if(t.id=="notif"){enableReminders()}
+});
+$("scene").addEventListener("keydown",function(e){if(e.key=="Enter")e.target.click()});
+["cmsg","omsg"].forEach(function(id){$(id).addEventListener("keydown",function(e){if(e.key=="Enter")send(id[0])})});
+IDS.forEach(function(k){var el=$(k);el.addEventListener("change",function(){S[k]=el.type=="number"?+el.value:el.value;if(k==="gender")S.skin=S.gender==="female"?"pink":"blue";save("cfg",S);say="";render();maybeSyncProfile();maybeSyncLog();schedulePushIfEnabled()})});
+var sx=0,sy=0,sw=false,lock=null,pg=$("pages"),trk=$("track");
+pg.addEventListener("touchstart",function(e){var q=e.touches[0];sx=q.clientX;sy=q.clientY;lock=null;sw=!e.target.closest("input,select,.strip,.qs")},{passive:true});
+pg.addEventListener("touchmove",function(e){if(!sw)return;var q=e.touches[0],dx=q.clientX-sx,dy=q.clientY-sy;
+  if(!lock&&(Math.abs(dx)>8||Math.abs(dy)>8))lock=Math.abs(dx)>Math.abs(dy)*1.2?"x":"y";
+  if(lock!="x")return;
+  var w=pg.clientWidth;if((page==0&&dx>0)||(page==2&&dx<0))dx*=.3;
+  trk.style.transition="none";trk.style.transform="translateX("+(-page*w+dx)+"px)"},{passive:true});
+pg.addEventListener("touchend",function(e){trk.style.transition="";if(lock!="x")return;var dx=e.changedTouches[0].clientX-sx,w=pg.clientWidth;lock=null;go(Math.abs(dx)>w*.2?page+(dx<0?1:-1):page)},{passive:true});
+pg.addEventListener("touchcancel",function(){trk.style.transition="";if(lock=="x")go(page);lock=null},{passive:true});
+window.addEventListener("resize",function(){trk.style.transition="none";go(page);void trk.offsetWidth;trk.style.transition=""});
+setInterval(function(){render()},15000);
+sync();setupAccountButtons();cloudInit();render();drawChat();$("onb").hidden=!!S.onboarded;if(!S.onboarded)document.documentElement.dataset.skin="blue";
+if(S.pushEnabled&&window.Notification&&Notification.permission==="granted")startLocalReminderCheck();if(S.reminderEnabled)startFreeAlarms(false);
+</script>
+</body>
+</html>
